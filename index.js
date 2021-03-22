@@ -2,6 +2,7 @@ var dark_mode = false;
 var root = document.querySelector(":root")
 var checkbox_item = document.getElementsByClassName("checkbox__item")[0];
 var checkbox_logo = document.getElementsByTagName("img")[0];
+var title = document.getElementsByClassName("header__title")[0];
 
 function checkbox(){
 switch (dark_mode){
@@ -13,6 +14,7 @@ switch (dark_mode){
 		root.style.setProperty("--cic","#555555");
 		checkbox_item.style.left="60px";
 		checkbox_logo.src="images/icons8-crescent-moon-100.svg";
+		title.innerHTML="Dark Mode";
 		break;
 	}
 
@@ -24,6 +26,7 @@ switch (dark_mode){
 		root.style.setProperty("--cic","#E2E2E2");
 		checkbox_item.style.left="0";
 		checkbox_logo.src="images/icons8-summer-100.svg";
+		title.innerHTML="Light Mode";
 		break;
 	}
 }
