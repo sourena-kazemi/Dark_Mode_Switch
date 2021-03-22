@@ -1,0 +1,64 @@
+:root{
+	--bgc: #F6F6F6;
+	/*bgc is background color*/
+	--tc: #000000;
+	/*tc is text color*/
+	--cc: #555555;
+	/*cc is checkbox color*/
+	--cic: #E2E2E2;
+	/*cic is checkbox item color*/
+}
+
+*{
+	margin:0;
+	padding:0;
+	transition:all .5s;
+}
+body{
+	background-color: var(--bgc);
+}
+.header{
+	display:flex;
+	justify-content:space-between;
+	align-content: center;
+	align-items:center;
+}
+.header__title{
+	color: var(--tc);
+	margin-left: 3rem;
+	font-size: 4rem;
+}
+.header__checkbox{
+	background-color: var(--cc);
+	border-radius: 30px;
+	width:120px;
+	height:60px;
+	margin-right: 3rem;
+	position: relative;
+}
+.checkbox__item{
+	width:60px;
+	height:60px;
+	background-color: var(--cic);
+	border-radius: 50%;
+	position:absolute;
+	left:0;
+	top:0;
+	transform: scale(1.05);
+	box-shadow: 1px 1px 5px black;
+}
+.checkbox__item img{
+	width:30px;
+	height:30px;
+	position:absolute;
+	top: 15px;
+	left: 15px;
+	transform: scale(1.05);
+}
+
+.main_text{
+	color: var(--tc);
+	margin-top: 2rem;
+	margin-left: 5rem;
+	font-size: 1.5rem;
+}
