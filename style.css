@@ -22,6 +22,7 @@ body{
 	justify-content:space-between;
 	align-content: center;
 	align-items:center;
+	flex-wrap:wrap;
 }
 .header__title{
 	color: var(--tc);
@@ -34,6 +35,7 @@ body{
 	width:120px;
 	height:60px;
 	margin-right: 3rem;
+	margin-left: .5rem;
 	position: relative;
 }
 .checkbox__item{
@@ -60,5 +62,5 @@ body{
 	color: var(--tc);
 	margin-top: 2rem;
 	margin-left: 5rem;
-	font-size: 1.5rem;
+	font-size: 2rem;
 }
